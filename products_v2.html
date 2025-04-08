@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes for Sale</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- Designed by Mincheol Hwang -->
+    
+    <style>
+        /* #container{
+            background-color: #f5c4cb;
+        }
+
+        nav{
+            background-color: #f97b8e;
+        }
+
+        header{
+            background-color: #650211;
+        }
+
+        section{
+            background-color: #85303d;
+        }
+
+        footer{
+            background-color:#f1d0a5;
+        } */
+
+        a.product{
+            width: 300px;
+            margin: 20px 0px 0px 75px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        p.product{
+            width: 300px;
+            margin: 5px 15px 0px 60px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+        }
+        
+        table, th, td{
+            border: 1px solid #000;
+            border-collapse: collapse;
+            box-sizing: border-box;
+            width: 300px;
+            height: 25px;
+            table-layout: fixed;
+            text-align: left;
+        }
+
+        table{
+            margin: 10px 0px 30px 150px;
+        }
+
+        tr:nth-child(odd){
+            background-color: lightsteelblue
+        }
+
+        tr:nth-child(1){
+            background-color: lightslategray;
+        }
+
+        fieldset{
+            margin: 15px 0px 0px 50px;
+            width: 600px;
+            background-color:#f1d0a5;
+        }
+
+        label{
+            display: inline-block;
+            width: 45px;
+            text-align: left;
+            margin: 15px 10px 15px 10px;
+        }
+
+        input{
+            display: inline-block;
+            margin: 15px 10px 15px 10px;
+            width: 350px;
+            height: 40px;
+        }
+
+        textarea{
+            vertical-align: top;
+            display: inline-block;
+            margin: 15px 10px 15px 10px;
+            width: 350px;
+            height: 130px;
+        }
+
+        button{
+            border: 1px solid #000;
+            width: 100px;
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "container">
+
+    <a href="index_v2.html"><img class = "logo" src="Edited Image/small/logo.png" alt="cake shop logo. links to home page"></a>
+    
+    <nav>
+        <a href="index_v2.html">Home</a>
+        <a href="products_v2.html">Our Cakes</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <header><img src="Edited Image/header_img/Chocolatecakebig1200.jpeg" alt="Picture of a chocolate cake with strawberry and cream"></header>
+
+    <section>
+        <h1>Cakes for Sale</h1>
+        <a class = "product" href="Edited Image/large/pinkBirthdayCake640.jpg"><img src="Edited Image/small/pinkBirthdayCake300.jpg" alt="A picture of pink cake with cream shaped as flowers"></a>
+        <a class = "product" href="Edited Image/large/orangeCake640.jpg"><img src="Edited Image/small/orangeCake300.jpg" alt="A picture of small orange cake"></a>
+        <a class = "product" href="Edited Image/large/cheeseCake640.jpg"><img src="Edited Image/small/cheeseCake300.jpg" alt="A picture of cheesecake with fruit toppings on top"></a>
+        <p class = "product">Can be made to match dietary requirements</p>
+        <p class = "product">Contains gluten&comma; dairy&comma; nuts and eggs&period; Strawberry cakes contain strawberries&period;</p>
+        <p class = "product">Contains gluten and dairy</p>
+        <a class = "product" href="Edited Image/large/brownie640.jpg"><img src="Edited Image/small/brownie300.jpg" alt="A picture of chocolate brownie with chocolate syrup"></a>
+        <a class = "product" href="Edited Image/large/cupcake640.jpg"><img src="Edited Image/small/cupcake300.jpg" alt="A picture of blueberry cupcake"></a>
+        <a class = "product" href="Edited Image/large/macaron640.jpg"><img src="Edited Image/small/macaron300.jpg" alt="A picture of colorful maracons"></a>
+        <p class = "product">Contains dairy&comma; nuts and eggs</p>
+        <p class = "product">Contains gluten&comma; dairy&comma; nuts and eggs</p>
+        <p class = "product">Contains gluten&comma; dairy&comma; nuts and eggs</p>
+    
+        <h2>Prices</h2>
+        <table>
+            
+            <tr>
+                <th>Cake Size</th>
+                <th>Suitable for</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Small</td>
+                <td>8&hyphen;10 people</td>
+                <td>&dollar;50&period;00</td>
+            </tr>
+
+            <tr>
+                <td>Medimum</td>
+                <td>10&hyphen;12 people</td>
+                <td>&dollar;60&period;00</td>
+            </tr>
+            
+            <tr>
+                <td>Large</td>
+                <td>16&hyphen;20 people</td>
+                <td>&dollar;100&period;00</td>
+            </tr>
+            
+        </table>
+
+        <h2>How to order</h2>
+        <p>If you&apos;re interested in ordering a cake for your special occasion&comma; let us know&excl;</p>
+        <form action="">
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <br>
+
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <br>
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone">
+                <br>
+
+                <label for="cake">Cake</label>
+                <textarea name="order" id="cake" placeholder="please submit the type and size of the cake&comma; feel free to add any personal requests"></textarea>
+                <br>
+
+                <label for="date">Date</label>
+                <input type="text" id="date" placeholder="plase submit the date the cake is needed">
+                <br>
+
+                <button><b>Send</b></button>
+            </fieldset>
+        </form>
+
+    </section>
+
+
+    <footer>
+        Designed by Mincheol Hwang &copy; 2025
+    </footer>
+
+    </div> 
+</body>
+</html>
